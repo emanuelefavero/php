@@ -77,6 +77,71 @@
         $fruit = 'banana';
         $banana = 'yellow';
         echo $$fruit; // yellow - variable variable
+
+        // ----------------------------
+        // add operators, arrays, control structures, functions HERE...
+        // ----------------------------
+
+        // * A superglobal is a predefined variable that is always accessible
+        // * $_SERVER is an array superglobal that contains information about headers, paths, and script locations
+
+        // Return relative path of current script
+        echo ltrim($_SERVER['SCRIPT_NAME'], '/');
+        echo "<br>"; // index.php
+        echo $_SERVER['SCRIPT_NAME']; // /index.php
+        echo "<br>";
+
+        // Returns the Host header from the current request
+        echo $_SERVER['HTTP_HOST'];
+        echo "<br>"; // localhost:4000
+
+        // Returns the filename of the currently executing script
+        echo $_SERVER['PHP_SELF'];
+        echo "<br>"; // /index.php
+
+        // Returns the IP address of the host server
+        // echo $_SERVER['SERVER_ADDR']; // will raise notice if you are using localhost
+        // echo "<br>"; //
+
+        // Returns the name of the host server
+        echo $_SERVER['SERVER_NAME'];
+        echo "<br>"; // localhost
+
+        // Returns the IP address from where the user is viewing the current page
+        echo $_SERVER['REMOTE_ADDR'];
+        echo "<br>"; //
+
+        // Returns the Host name from where the user is viewing the current page
+        // echo $_SERVER['REMOTE_HOST']; // will raise notice if you are using localhost
+        // echo "<br>"; //
+
+        // Returns the port being used on the user's machine to communicate with the web server
+        echo $_SERVER['REMOTE_PORT'];
+        echo "<br>"; // 61357
+
+        // Returns the absolute pathname of the currently executing script
+        echo $_SERVER['SCRIPT_FILENAME'];
+        echo "<br>"; // /Users/ef/Desktop/php-test/index.php
+
+        // Returns the port being used on the user's machine to communicate with the web server
+        echo $_SERVER['SERVER_PORT'];
+        echo "<br>"; // 4000
+
+        // Returns the protocol and version of the request
+        echo $_SERVER['SERVER_PROTOCOL'];
+        echo "<br>"; // HTTP/1.1
+
+        // Returns the php software version being used on the server
+        echo $_SERVER['SERVER_SOFTWARE'];
+        echo "<br>"; // PHP 7.4.3 Development Server
+
+        // Returns the request method used to access the page
+        echo $_SERVER['REQUEST_METHOD'];
+        echo "<br>"; // GET
+
+        // Returns the timestamp of the start of the request
+        echo $_SERVER['REQUEST_TIME'];
+        echo "<br>"; // 1597140000
       ?>
     </body>
 </html>
