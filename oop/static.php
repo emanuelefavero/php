@@ -12,5 +12,5 @@ class person {
 
 person::sayHello(); // Hello John
 
-// static are similar to javascript objects literals
+// TIP: static are similar to javascript objects literals
 ?>
