@@ -10,6 +10,7 @@
       include 'write.php';
       include 'append.php';
       include 'form.php';
+      include 'read.php';
       ?>
     </body>
 </html>
