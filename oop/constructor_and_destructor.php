@@ -10,7 +10,7 @@ class Car {
 }
 
 $car = new Car('BMW', 2015);
-echo $car->name . ' ' . $car->year;
+echo $car->name . ' ' . $car->year . "\n";
 
 // * destructor - is called when an object is destroyed
 class Color {
@@ -28,4 +28,12 @@ $color = new Color('red'); // the object is destroyed after being created
 
 // Destructors are useful for performing certain tasks when the object finishes its lifecycle. For example, release resources, write log files, close a database connection, and so on.
 // PHP releases all resources when a script finishes its execution.
+
+
+class TestConstructorDestructor {
+  public function __construct() {echo "object constructed \n";}
+  public function __destruct() {echo "object destroyed \n";}
+}
+
+$test = new TestConstructorDestructor();
 ?>
