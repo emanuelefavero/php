@@ -25,4 +25,7 @@ class Color {
 }
 
 $color = new Color('red'); // the object is destroyed after being created
+
+// Destructors are useful for performing certain tasks when the object finishes its lifecycle. For example, release resources, write log files, close a database connection, and so on.
+// PHP releases all resources when a script finishes its execution.
 ?>
