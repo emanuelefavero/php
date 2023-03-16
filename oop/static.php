@@ -6,7 +6,7 @@ class person {
   static function sayHello() {
 
     // self is used to access static properties and methods
-    echo "Hello " . self::$name;
+    echo "Hello " . self::$name . "\n";
   }
 }
 
