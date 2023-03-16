@@ -4,5 +4,6 @@
 // include 'inheritance.php';
 // include 'visibility.php'
 // include 'interface.php';
-include 'abstract.php';
+// include 'abstract.php';
+include 'static.php'
 ?>
