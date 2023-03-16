@@ -13,7 +13,8 @@ class Product {
 class ElectronicProduct extends Product {
   public $warranty;
   public function __construct($name, $price, $warranty) {
-    parent::__construct($name, $price);
+    parent::__construct($name, $price); // call the parent constructor
+    // :: is the scope resolution operator - it allows you to access static properties and methods
     $this->warranty = $warranty;
   }
 }
