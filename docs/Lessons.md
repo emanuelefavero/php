@@ -2,6 +2,8 @@
 
 ## L01 - PHP Intro
 
+Materiale: [appunti ed esempi L01](notes/l01-php-intro.md).
+
 - Intro PHP e Backend
 - Sintassi PHP, echo e stringhe
 - Parametri GET
